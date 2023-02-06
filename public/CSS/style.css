@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'NotoKufi';
+    src: url(../Fonts/NotoKufiArabic-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NotoKufi';
+}
+
+section {
+    padding: 0 100px;
+}
+
+section .title {
+    position: relative;
+}
+
+.title .text {
+    position: absolute;
+    bottom: -25px;
+}
+
+.title .text h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+
+.title .text h4 {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+/* HEADER SECTION START */
+header {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../Patterns/Top-Pattern.svg);
+    background-repeat: no-repeat;
+}
+
+header nav {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav p {
+    flex-basis: 60%;
+    font-size: 1.25rem;
+}
+
+header nav .logo {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .logo h1 {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    line-height: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav .logo h4 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header aside {
+    position: absolute;
+    top: 400px;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+header aside p {
+    color: #999;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 8px 20px;
+}
+
+header aside img {
+    width: 50px;
+    transform: rotate(90deg);
+}
+
+header .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+header .text h4 {
+    font-size: 2rem;
+}
+
+header .text h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    width: fit-content;
+    display: block;
+    margin: 30px auto;
+}
+
+header .text p {
+    font-size: 1.25rem;
+    text-align: end;
+}
+
+/* HEADER SECTION END */
+
+/* CLIENTS SECTION START */
+
+.clients-section .owl-carousel {
+    margin: 100px 0;
+}
+
+.clients-section .owl-carousel .item {
+    width: 200px;
+    margin: auto;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: purple;
+    width: 40px;
+}
+
+/* CLIENTS SECTION END */
+
+/* SERVICES SECTION START */
+.services-section {
+    background-image: url(../Patterns/Left-Pattern.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.services-section .flex {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-section .flex .card {
+    position: relative;
+    flex-basis: 32%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    height: 550px;
+    background-color: #fff;
+}
+
+.services-section .flex .card .icon {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #fff;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px -2px 1px #99999922);
+}
+
+.services-section .flex .card .text {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.services-section .flex .card .text h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.services-section .flex .card .text p {
+    font-size: 1.25rem;
+    color: #999;
+}
+
+.services-section .flex .card .text .number {
+    color: #999;
+    font-size: 2rem;
+    display: block;
+    width: fit-content;
+    margin-right: auto;
+}
+
+.services-section .flex .card .footer-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+@media (max-width:1200px) {
+    .services-section .flex .card {
+        flex-basis: 48%;
+        margin-bottom: 125px;
+    }
+}
